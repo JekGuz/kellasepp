@@ -1,7 +1,7 @@
 <?php
-$kasutaja = "jekguz";
-$parool = "1234";
-$andmebaas = "kellasepp";
+$kasutaja = "***";
+$parool = "***";
+$andmebaas = "***";
 $serverinimi = "localhost";
 
 $yhendus = new mysqli($serverinimi, $kasutaja, $parool, $andmebaas);

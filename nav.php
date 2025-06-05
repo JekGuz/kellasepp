@@ -9,9 +9,9 @@
         <li>
             <a href="?leht=inputADD.php">Lisamisvorm</a>
         </li>
-        <!--<li>
-            <a href="?leht=sort.php">SORT/OTSING</a>
-        </li> -->
+        <li>
+            <a href="https://github.com/JekGuz/kellasepp">GitHub</a>
+        </li>
 
         <li>
             <form action="logout.php" method="post">

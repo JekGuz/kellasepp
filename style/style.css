@@ -1,0 +1,315 @@
+h1{
+    letter-spacing: 0.1cm;
+    margin: center;
+}
+body{
+    background: #9ab6dc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 80px;
+
+        /* Меняем logo на боди */
+    background-image: url('../content/logoKell.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 500px;
+    opacity: 1; 
+}
+
+
+header {
+    /*logo смотрим меняем
+    background-image: url('../content/logoKell.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;   */
+    
+    color: #F2E205;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-variant: small-caps;
+    border: solid 3px #F25C05;
+    background-color: #011140;
+    padding: 20px;
+}
+
+footer {
+    color: #F2E205;
+    border-top: 3px solid #F25C05;
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px;
+    background-color: #011140;
+    margin-top: 40px; /* чтобы отступался от контента */
+}
+
+/* НАВИГАЦИИЯЯЯЯЯ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011140;
+    border: solid 3px #F25C05;
+    padding: 6px 40px;
+    min-height: 50px;
+}
+
+/* Центрированное меню */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+nav ul li {
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #F2E205;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Пользователь */
+#kasutaja {
+    display: flex;
+    align-items: center;
+    gap: 15px;    /* 10 было неплохо пустое пространство между всеми элементами  */
+    color: #F2E205;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+/* Отключаем подчёркивание при наведении */
+#kasutaja:hover {
+    text-decoration: none;
+}
+
+/* Иконки */
+#kasutaja img {
+    width: 20px;
+    height: 20px;
+}
+
+nav button[name="logout"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+
+section h2{
+    text-align: center;
+    letter-spacing: 0.1cm;
+}
+
+section{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+input[type=button] {
+    background-color: #011140;
+    color: #F2E205;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+/* Главное стр p  */
+#avaleht {
+    padding: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #011140;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#avaleht ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#avaleht li {
+    margin-bottom: 6px;
+}
+
+
+/* --------------------------------------VORMID----------------------------------------------------------------- */
+#base {
+    border-collapse: collapse;
+    border: solid 1px;
+    width: 50%;
+    padding: 2%;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+#base td, th {
+    border: dotted 1px;
+    padding: 2%;
+    text-align: center;
+}
+
+/* Таблица логин  */
+#logi {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 30px auto;
+    width: 400px;
+    font-size: 18px;
+}
+
+#logi td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+/* Центрирование заголовка */
+#pealkiri {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Обёртка форм */
+#vormid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Общие стили для всех форм */
+#tellimus-vorm,
+#klient-vorm,
+#teenus-vorm {
+    background-color: #e6f0ff;
+    padding: 20px;
+    border: 2px solid #2165BF;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+input[type=text], input[type=number], input[type=email], input[type=tel], input[type=date], input[type=file], input[type=time], input[type=week], input[type=password], select {
+    border: 1px solid #011140;
+    border-radius: 4px;
+    padding: 10px;
+    color: #0c0c0c;
+    background: #d0e0ef;
+    font-size: 14px;
+}
+
+input[type=radio]:hover /*+label*/{
+    background-color: #d0e0ef;
+    font-size: 20px;
+    padding: 10px;
+    color: #000000;
+    width: 30px;
+    height: 20px;
+}
+input[type=checkbox]+label /*:hover*/{
+    background-color: #d0e0ef;
+    font-size: 20px;
+    padding: 10px;
+    color: #000000;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #011140;
+    cursor: pointer;
+    line-height: 32px;
+}
+input[type=range] {
+    width: 80%;
+    border: 1px solid #011140;
+    border-radius: 4px;
+    padding: 10px;
+    color: #0c0c0c;
+    background: #d0e0ef;
+    -webkit-appearance: inherit; /* Убирает стандартный стиль в WebKit-браузерах */
+}
+input[type=color] {
+    width: 80%;
+    height: 40px;
+    background: #d0e0ef;
+    border: 1px solid #011140;
+}
+
+input[type=reset]{
+    border: 1px solid #011140;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #0c0c0c;
+    background-color: #ed708e;
+}
+input[type=submit]{
+    border: 1px solid #011140;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #F2E205;
+    background-color: #011140;
+}
+
+input[type=file]{
+    border: 1px solid #011140;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #0c0c0c;
+    background-color: #d0e0ef;
+}
+
+
+/*  Красивый сорт */
+#sort {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bold;
+    color: #011140;
+    font-size: 16px;
+    width: fit-content;
+}
+
+#sort a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#sort a:hover {
+    color: #F25C05;
+    text-decoration: underline;
+} 
